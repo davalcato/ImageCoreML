@@ -13,6 +13,9 @@
 		7530251126B72ECC00508EF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7530251026B72ECC00508EF1 /* Preview Assets.xcassets */; };
 		7530251B26B72ECC00508EF1 /* ImageCoreMLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7530251A26B72ECC00508EF1 /* ImageCoreMLTests.swift */; };
 		7530252526B72ECC00508EF1 /* ImageCoreMLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7530252426B72ECC00508EF1 /* ImageCoreMLUITests.swift */; };
+		7530253326B732F200508EF1 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7530253226B732F200508EF1 /* Resnet50.mlmodel */; };
+		7530253526B7336800508EF1 /* Uiimage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7530253426B7336800508EF1 /* Uiimage + Extension.swift */; };
+		7530253826B7365D00508EF1 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7530253726B7365D00508EF1 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		7530251A26B72ECC00508EF1 /* ImageCoreMLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCoreMLTests.swift; sourceTree = "<group>"; };
 		7530252026B72ECC00508EF1 /* ImageCoreMLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageCoreMLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7530252426B72ECC00508EF1 /* ImageCoreMLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCoreMLUITests.swift; sourceTree = "<group>"; };
+		7530253226B732F200508EF1 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		7530253426B7336800508EF1 /* Uiimage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Uiimage + Extension.swift"; sourceTree = "<group>"; };
+		7530253726B7365D00508EF1 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,8 @@
 		753024FD26B72EC900508EF1 = {
 			isa = PBXGroup;
 			children = (
+				7530253726B7365D00508EF1 /* ImagePicker.swift */,
+				7530253626B7361400508EF1 /* Extension */,
 				7530250826B72EC900508EF1 /* ImageCoreML */,
 				7530251926B72ECC00508EF1 /* ImageCoreMLTests */,
 				7530252326B72ECC00508EF1 /* ImageCoreMLUITests */,
@@ -92,6 +100,7 @@
 		7530250826B72EC900508EF1 /* ImageCoreML */ = {
 			isa = PBXGroup;
 			children = (
+				7530253126B732CA00508EF1 /* ML Model */,
 				7530250926B72EC900508EF1 /* ImageCoreMLApp.swift */,
 				7530250B26B72EC900508EF1 /* ContentView.swift */,
 				7530250D26B72ECC00508EF1 /* Assets.xcassets */,
@@ -122,6 +131,22 @@
 				7530252426B72ECC00508EF1 /* ImageCoreMLUITests.swift */,
 			);
 			path = ImageCoreMLUITests;
+			sourceTree = "<group>";
+		};
+		7530253126B732CA00508EF1 /* ML Model */ = {
+			isa = PBXGroup;
+			children = (
+				7530253226B732F200508EF1 /* Resnet50.mlmodel */,
+			);
+			path = "ML Model";
+			sourceTree = "<group>";
+		};
+		7530253626B7361400508EF1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7530253426B7336800508EF1 /* Uiimage + Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +280,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7530250C26B72EC900508EF1 /* ContentView.swift in Sources */,
+				7530253526B7336800508EF1 /* Uiimage + Extension.swift in Sources */,
+				7530253826B7365D00508EF1 /* ImagePicker.swift in Sources */,
+				7530253326B732F200508EF1 /* Resnet50.mlmodel in Sources */,
 				7530250A26B72EC900508EF1 /* ImageCoreMLApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
